@@ -1,0 +1,12 @@
+doctype html
+html(lang='en')
+    include ./partials/head.jade
+    body(class="fluid-page")
+        #page
+            include ./partials/header.jade
+            main.site-main
+                .container-fluid
+                    include ./partials/sidebar.jade
+                    include ./partials/content.jade
+                    include ./partials/flyout.jade
+            include ./partials/footer.jade
