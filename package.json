@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "jade --out dist -P -p ./src/jade/partials/ -H ./src/jade/",
-    "build": "webpack"
+    "compile": "jade --out dist -P -p ./src/jade/partials/ -H ./src/jade/ -w",
+    "build": "webpack && jade --out dist -P -p ./src/jade/partials/ -H ./src/jade/"
   },
   "author": "",
   "license": "ISC",
