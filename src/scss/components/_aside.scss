@@ -1,0 +1,7 @@
+#secondary {
+    flex-basis: 250px;
+    flex-grow: 0;
+    background: $color__main-1;
+    border-right: 1px solid #ccc;
+    height: calc(100vh - 40px);
+}

@@ -1,1 +1,14 @@
 @import "vendors/bootstrap4/bootstrap-grid";
+@import "vendors/bootstrap4/bootstrap-reboot";
+
+@import "variables/color";
+@import "variables/typography";
+
+@import "layouts/default";
+
+@import "components/header";
+@import "components/notification";
+@import "components/searchbox";
+@import "components/image";
+@import "components/aside";
+@import "components/chatlist";

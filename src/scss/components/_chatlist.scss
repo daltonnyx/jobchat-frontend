@@ -1,0 +1,86 @@
+.list-chat {
+    .aside-header {
+        border-bottom: 1px solid #ccc;
+        padding: 17px 0px 9px;
+        h3 {
+            flex-basis: 75%;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+    }
+    .main-account {
+        display: flex;
+        align-items: center;
+        padding: 7px 15px;
+        h3 {
+            margin-bottom: 0;
+            font-size: 12px;
+            margin-left: 13px;
+        }
+    }
+    .account-lists {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .scrollable {
+        overflow-y: auto;
+        max-height: calc(100vh - 138px);
+    }
+    .account {
+        padding: 7px 15px;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        position: relative;
+        transition: .3s linear all;
+        &:hover,&.active {
+            background: #fff;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+        img {
+            width: 32px;
+            height: 32px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            color: #000;
+            font-size: 12px;
+            &:hover {
+                text-decoration: none;
+            }
+            .name {
+                margin-bottom: 0;
+                margin-left: 13px;
+            }
+            .room {
+                margin-left: 12px;
+                font-style: italic;
+                color: $color__text-3;
+                
+            }
+            .unread {
+                position: absolute;
+                right: 17px;
+                width: 16px;
+                height: 16px;
+                font-size: 11px;
+                font-weight: bold;
+                color: #fff;
+                border-radius: 50%;
+                background: $color__bg-3;
+                text-align: center;
+                line-height: 16px;
+            }
+            .new {
+                position: absolute;
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                background: #8dc63f;
+                top: -4px;
+                right: -4px;
+            }
+        }
+    }
+}

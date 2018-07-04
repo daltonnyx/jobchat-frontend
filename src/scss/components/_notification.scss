@@ -1,0 +1,20 @@
+.notification {
+    a {
+        margin-right: 28px;
+        position: relative;
+        line-height: 33px;
+        span {
+            display: inline-block;
+            position: absolute;
+            left: 43%;
+            top: -50%;
+            background: $color__bg-4;
+            width: 16px;
+            height: 16px;
+            text-align: center;
+            color: #fff;
+            line-height: 16px;
+            border-radius: 50%;
+        }
+    }
+}

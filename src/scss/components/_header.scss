@@ -1,0 +1,39 @@
+.page-header {
+    padding: 4px 0px;
+    border-bottom: 1px solid #ccc;
+    .search-box {
+        flex-basis: 250px;
+        flex-grow: 0;
+    }
+    .page-title {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        text-align: center;
+        font-family: 'Comic Sans MS';
+        font-weight: bold;
+        margin-bottom: 0;
+        font-size: 24px;
+        line-height: 30px;
+        .first {
+            color: #46454c;
+            text-shadow: 0px 2px 2px #ccc;
+        }
+        .last {
+            color: #3490e9;
+            text-shadow: 0px 2px 2px #ccc;
+        }
+    }
+    .notification-bar {
+        flex-basis: 0;
+        .account {
+            a {
+                color: #000;
+                .name {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

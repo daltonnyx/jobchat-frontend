@@ -6,8 +6,8 @@ html(lang='en')
             include ./partials/header.jade
             main.site-main
                 .container-fluid
-                    include ./partials/sidebar.jade
-                    include ./partials/content.jade
-                    include ./partials/flyout.jade
+                    .row
+                        include ./partials/sidebar.jade
+                        include ./partials/content.jade
+                        include ./partials/flyout.jade
             include ./partials/footer.jade
-        link(rel="stylesheet", href="css/style.css")

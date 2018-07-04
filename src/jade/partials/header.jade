@@ -1,2 +1,8 @@
 header(class="page-header")
-        
+    .container-fluid
+        .row
+            .col.search-box
+                include ./components/searchbox.jade
+            include ./components/logo.jade
+            .col.d-flex.justify-content-end.notification-bar
+                include ./components/notify.jade
