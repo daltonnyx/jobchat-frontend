@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "jade --out dist -P -p ./src/jade/partials/ -H ./src/jade/ -w",
-    "build": "webpack",
+    "build": "webpack -w",
     "compile-production": "webpack && jade --out dist -P -p ./src/jade/partials/ -H ./src/jade/"
   },
   "author": "",
