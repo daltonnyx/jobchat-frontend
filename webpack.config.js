@@ -31,9 +31,9 @@ module.exports = {
                 loader: 'file-loader',
                 options: {
                   emitFile: false,
-                  useRelativePath: true,
+                  useRelativePath: false,
                   name: '[name].[ext]',
-                  outputPath: 'assets/',
+                  outputPath: '../images/',
                 }
               }
                // limit => file.size =< 8192 bytes ? DataURI : File

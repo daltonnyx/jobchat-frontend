@@ -1,0 +1,15 @@
+- var images = ['t-i-xu-ng', 't-i-xu-ng-1', 'images-4', 't-i-xu-ng-2', 't-i-xu-ng-3', 't-i-xu-ng-4', 'images-2']
+.participants
+    ul.ids
+        each id in images
+            li.id
+                a(href="#")
+                    span.avatar
+                        img(src='./images/' + id + '.png', alt=id)
+        li.more
+            a(href="#")
+                span.avatar +12
+        li.add-member
+            a(href="#")
+                span
+                    img(src="./images/forma-6.png", alt="")

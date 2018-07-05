@@ -1,0 +1,60 @@
+.chat-box {
+    .box-info {
+        background: $color__main-1;
+        border-bottom: 1px solid #ccc;
+        padding: 7px 7px 7px;
+        display: flex;
+        align-items: center;
+        .box-name {
+            flex-grow: 1;
+            h3 {
+                display: inline-block;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .participants {
+        li {
+            margin-left: 7.5px;
+        }
+        .id {
+            img {
+                width: 24.7px;
+                height: 24.7px;
+            }
+        }
+        .more {
+            .avatar {
+                width: 24.7px;
+                height: 24.7px;
+                background: #fff;
+                line-height: 2;
+                color: $color__icon-2;
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    .settings {
+        padding-right: 14px;
+        li {
+            margin-left: 32px;
+            a {
+                color: #000;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            span {
+                margin-left: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.chat-box
+    header.box-info
+        .box-name
+            span.avatar
+                img(src="./images/layer-3.png", alt= box_name)
+            h3.box-title= box_name
+        include ./chat-participants.jade
+        include ./chat-toolbox.jade
+    include ./chat-screen.jade
+    include ./chat-input.jade

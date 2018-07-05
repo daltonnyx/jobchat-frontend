@@ -1,4 +1,11 @@
 body {
     font-family: $font__main-1;
     font-size: 14px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-content {
+    flex-basis: 0;
+    flex-grow: 1;
 }

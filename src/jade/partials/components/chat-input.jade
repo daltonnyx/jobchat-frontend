@@ -1,0 +1,20 @@
+.chat-form
+    .toolbox
+        ul
+            li.emoji
+                a.emoji.action(href="#")
+                    img(src="./images/forma-7.png", alt="emoji")
+            li.image
+                a.image.action(href="#")
+                    img(src="./images/shape-2.png", alt="image")
+            li.attachment
+                a.attachment.action(href="#")
+                    img(src="./images/forma-8.png", alt="attachment")
+            li.send-to
+                a.sendto.action(href="#")
+                    span Gửi đến
+    .new-message
+        form(action="/", method="POST")
+            textarea#message(name="message", placeholder="Nhập tin nhắn ...")
+            button(type="submit")
+                img(src="./images/forma-9.png", alt="")

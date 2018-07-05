@@ -1,0 +1,42 @@
+.chat-form {
+    .toolbox {
+        background: $color__main-1;
+        padding: 6px 0px;
+        ul {
+            li {
+                margin-left: 20px;
+                &:first-child {
+                    margin-left: 16px;
+                }
+                a {
+                    color: $color__text-4;
+                }
+            }
+        }
+    }
+    .new-message {
+        position: relative;
+        #message {
+            width: 100%;
+            padding: 14px 16px;
+            height: 62px;
+            border: 1px solid #ccc;
+            border-left: none;
+            box-sizing: border-box;
+            &:hover, &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+        button[type="submit"] {
+            position: absolute;
+            background: none;
+            border: none;
+            outline: none;
+            padding: 0;
+            right: 31px;
+            top: 17px;
+        }
+
+    }
+}
