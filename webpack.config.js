@@ -6,7 +6,7 @@ module.exports = {
       './src/js/main.js',
       './src/scss/style.scss',
       ],
-    watch: true,
+    watch: false,
     output: {
         filename: './js/app.bundle.js'
     },
