@@ -1,0 +1,72 @@
+.users {
+    .search-user {
+
+    }
+    .user-table-list {
+        font-size: 13px;
+        .users-table {
+            width: 100%;
+            tr {
+                border-bottom: 1px solid #ccc;
+            }
+            th {
+                font-weight: normal;
+                color: #46454c;
+                padding: 15px 0px;
+                &:nth-child(2) {
+                    padding-left: 15px;
+                }
+            }
+            td {
+                color: #010101;
+                padding: 7px 0px;
+                &:last-child {
+                    text-align: center;
+                }
+                &:nth-child(2) {
+                    padding-left: 15px;
+                }
+            }
+        }
+        input[type="checkbox"] {
+            display: none;
+            &:checked + .checkbox:not(.style-2) {
+                &:before {
+                    content: "X";
+                    position: absolute;
+                    color: #777;
+                    left: 50%;
+                    top: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                }
+            }
+            &:checked + .checkbox.style-2 {
+                transform: rotate(45deg) translateX(4px) translateY(-4px);
+                width: 8px;
+                border-width: 0px 3px 3px 0px;
+                border-color: #3490e9;
+            }
+        }
+        label {
+            margin-bottom: 0;
+        }
+        .avatar {
+            img {
+                width: 36px;
+                height: 36px;
+            }
+            & + .name {
+                margin-left: 10px;
+            }
+        }
+        .checkbox {
+            transition: .3s linear all;
+            width: 16px;
+            position: relative;
+            height: 16px;
+            display: inline-block;
+            border: solid 1px #cccccc;
+            vertical-align: -3px;
+        }
+    }
+}

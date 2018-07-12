@@ -1,0 +1,17 @@
+.add-room-form {
+    .form-line .form-control {
+        padding: 10px 22px;
+        margin-bottom: 4px;
+    }
+    .control {
+        .note {
+            display: block;
+            line-height: 1;
+            font-style: italic;
+            font-size: 12px;
+        }
+    }
+    .search-box {
+        padding:  8px 28px !important;  
+    }
+}

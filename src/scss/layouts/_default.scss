@@ -9,3 +9,70 @@ body {
     flex-basis: 0;
     flex-grow: 1;
 }
+
+.button {
+    padding: 7px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #777;
+    text-align: center;
+    border: 2px solid #cecece;
+}
+
+.border-dashed {
+    border-style: dashed !important;
+}
+
+.tab-content {
+    padding-top: 13px;
+    display: none;
+    &.show {
+        display: block;
+    }
+}
+
+.color-primary {
+    color: #4b7ebb;
+}
+
+.color-danger {
+    color: #c0504d;
+}
+
+.color-success {
+    color: #98b953;
+}
+
+.fixed-box {
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.float {
+    position: absolute;
+    z-index: 99;
+}
+
+.nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-tabs {
+    .nav-tab {
+        border-top: 3px solid transparent;
+        padding: 10px 30px;
+        &.active {
+            border-top: 3px solid #3490e9;
+        }
+        .nav-link {
+            font-size: 14px;
+            color: #000;
+        }
+    }
+}

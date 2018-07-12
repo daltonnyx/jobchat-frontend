@@ -1,0 +1,35 @@
+.job-list {
+    .job-tabs {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background: $color__main-1;
+        display: flex;
+        font-size: 14px;
+        border-bottom: 1px solid #ccc;
+        .job-tab {
+            padding: 11px 25px;
+            border-top: 4px solid transparent;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            margin-bottom: -1px;
+            a {
+                color: #000;
+            }
+            &.active, &:hover {
+                background: #fff;
+                border-top: 4px solid #3490e9;
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                a {
+                    color: $color__text-1;
+                    font-weight: bold;
+                }
+            }
+        }
+        .add-tab {
+            align-self: center;
+            margin-left: 60px;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+- var user_list=[{name:"Lê Bảo Châu",image:"./images/images-4@2x.png",checked:!0,admin:!1},{name:"Phạm Nhật Vượng",image:"./images/t-i-xu-ng-2@2x.png",checked:!1,admin:!1},{name:"Trịnh Xuân Thanh",image:"./images/t-i-xu-ng-3@2x.png",checked:!0,admin:!0},{name:"Trịnh Văn Quyết",image:"./images/t-i-xu-ng-4@2x.png",checked:!0,admin:!1},{name:"Cao Ngọc Phương Dung",image:"./images/t-i-xu-ng-2@2x.png",checked:!1,admin:!1},{name:"Nguyễn Thị Hồng Ngân",image:"./images/t-i-xu-ng-3@2x.png",checked:!1,admin:!1},{name:"Cao Xuân Dũng",image:"./images/t-i-xu-ng-4@2x.png",checked:!1,admin:!1}]
+.fly-out.has-close-button
+    .friend-box
+        header.popup-header
+            ul.nav.nav-tabs
+                li.nav-tab.active
+                    a.nav-link(href="#") Kết bạn
+                li.nav-tab
+                    a.nav-link(href="#") Danh bạ
+            a.close-popup(href="#")
+                img(src="./images/grupo-2.png", alt="X")
+        .popup-content
+            section.new-request
+                p.info Bạn nhận được 2 lời mời kết bạn từ
+                .fr-requests
+                    .request
+                        .left
+                            span.avatar
+                                img(src="./images/images-4.png", alt="")
+                        .right
+                            a(href="#") Lê Bảo Châu
+                        .action
+                            a.btn.small.btn-primary(href="#") Đồng ý
+                            a.btn.small.btn-secondary(href="#") Hủy
+                    .request
+                        .left
+                            span.avatar
+                                img(src="./images/t-i-xu-ng-2.png", alt="")
+                        .right
+                            a(href="#") Phạm Nhật Vượng
+                        .action
+                            a.btn.small.btn-primary(href="#") Đồng ý
+                            a.btn.small.btn-secondary(href="#") Hủy
+            section.invite
+                form.invitation(action="/")
+                    .form-line
+                        textarea.form-control#inviteemail(name="invite_emails", placeholder="Nhập Email  (cách nhau bởi dấu “,”)")
+                    button.btn.small.btn-primary(type="submit") Mời kết bạn
+            section.users
+                h4.section-title Tìm kiếm
+                .users
+                    .search-user
+                        form#search-user(action="/")
+                            .form-line
+                                input.form-control.search-box(type="text", name="_search_user", placeholder="Nhập tên hoặc email cần tìm ...")
+                            button(type="submit")
+                                img(src="./images/forma-1.png", alt="")
+                    .user-table-list
+                        .table.users-table
+                            each user, idx in user_list
+                                .user
+                                    .name
+                                        .user-card.small
+                                            span.avatar
+                                                img(src=user.image, alt=user.name)
+                                            span.name= user.name
+                                    .action
+                                        a.btn.small.btn-primary(href="#") Kết bạn
+
+                                
+            
+                

@@ -1,0 +1,25 @@
+.fly-out.has-close-button
+    header.popup-header
+        h3.popup-title Add Room
+        a.close-popup(href="#")
+            img(src="./images/grupo-2.png", alt="X")
+    .popup-content
+        form.add-room-form(action="/")
+            section.summary-info
+                .form-line
+                    input.form-control(type="text", name="room_name", placeholder="Room Name...")
+                .form-line.justify-content-between
+                    .span.caption Avatar
+                    .a.file-upload.avatar-file
+                        img(src="./images/shape-6.png", alt="upload")
+                        span Upload
+                .form-line
+                    .control(style={width: '100%'})
+                        label(for="email-invite") Invite Email
+                        textarea#email-invite.form-control(name="email_invite", style={resize: 'none'})
+                        span.note Mỗi email cách nhau bởi dấu “,”
+            section.users
+                h4.section-title Add Friends
+                include ./components/add-user-list.jade
+            button.btn.btn-primary(type="submit") Save
+                

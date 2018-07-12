@@ -1,0 +1,168 @@
+.job-content {
+    max-width: 100vw;
+}
+.kanban-task {
+    display: flex;
+    height: calc(100vh - 146px);
+    overflow-x: auto;
+    padding-bottom: 26px;
+    &::-webkit-scrollbar {
+        height: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #cecece;
+    }
+    &::-webkit-scrollbar-track {
+        background: #fff;
+    }
+    .kanban-col {
+        width: 352px;
+        flex-shrink: 0;
+        margin-right: 13px;
+        border-radius: 10px;
+        padding: 10px 5px 10px 0px;
+        background: $color__main-1;
+        border: 1px solid #e1e4e8;
+        .kanban-header {
+            position: relative;
+            margin: 0px 10px;
+            h3.column-title {
+                padding-left: 32px;
+                font-weight: normal;
+                font-size: 14px;
+                color: #000;
+            }
+            a {
+                position: absolute;
+            }
+            .joined {
+                font-size: 12px;
+                width: 18px;
+                height: 18px;
+                color: #000;
+                background: #fff;
+                text-align: center;
+                left: 0;
+                border-radius: 50%;
+            }
+            .add-col {
+                top: 0;
+                right: 30px;
+            }
+            .edit-col {
+                top: 0;
+                right: -2px;
+            }
+        }
+        .tasks {
+            position: relative;
+            overflow-y: auto;
+            overflow-x: hidden;
+            max-height: calc(100% - 31px);
+            &::-webkit-scrollbar {
+                width: 10px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #cecece;
+            }
+            &::-webkit-scrollbar-track {
+                background: $color__main-1;
+            }
+            .card {
+                background: #fff;
+                border: 1px solid #e1e4e8;
+                border-radius: 5px;
+                position: relative;
+                padding: 11px 33px;
+                margin: 0 10px 7px;
+                .icon {
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+                    line-height: 1;
+                }
+                .edit-task {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    width: 16px;
+                    height: 15px;
+                }
+                h4 {
+                    font-weight: normal;
+                    color: $color__text-1;
+                    line-height: 1;
+                    font-size: 14px;
+                    margin-bottom: 7px;
+                }
+                .forward-name {
+                    margin-top: -4px;
+                    padding-left: 21px;
+                    background: url(../../dist/images/shape-4.png) no-repeat center left;
+                }
+                .created-by {
+                    margin-bottom: 9px;
+                    padding: 0px 2.5px;
+                    line-height: 1;
+                    .caption {
+                        color: $color__bg-3;
+                        
+                    }
+                }
+               
+                .followers {
+                    display: flex;
+                    margin-top: 7px;
+                    margin-right: -23px;
+                    justify-content: space-between;
+                    .avatar {
+                        margin-left: 5px;
+                        img {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+            .new-task {
+                text-align: center;
+                margin-top: 17px;
+            }
+        }
+    }
+    .new-column {
+        width: 352px;
+        flex-shrink: 0;
+        a {
+            border-radius: 10px;
+            border: dashed 3px #cecece;
+            text-align: center;
+            display: block;
+            padding: 11px 0px 14px;
+            line-height: 1;
+            font-size: 20px;
+            font-weight: bold;
+            color: $color__bg-3;
+        }
+    }
+}
+
+.tags {
+    span {
+        padding: 3px 9px;
+        font-size: 12px;
+        margin: 0px 2.5px;
+    }
+    .success {
+        background: #aae26f;
+    }
+    .warning {
+        background: #efe57a;
+    }
+    .danger {
+        background: #ff8d8d;
+    }
+    .primary {
+        background: #8fd6ff;
+    }
+}

@@ -1,0 +1,11 @@
+-var tabs = [{title: "Jobpro", active: false}, {title: "Medhome", active: true}, {title: "Lobe", active: false}, {title: "Chém gió", active: false}, {title: "World Cúp kèo", active: false}]
+ul.job-tabs
+    each tab in tabs
+        li(class= tab.active ? "job-tab tab active" : "job-tab tab")
+            a.link.nav-link(href="#")= tab.title
+    li.add-tab
+        a(href="#").nav-link.link.button.border-dashed Add
+            
+
+
+

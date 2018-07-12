@@ -1,0 +1,16 @@
+- var box_name = 'Chém gió'
+- var list_chat = [{avatar: './images/images-2.png',name: 'Lobe Beauty',type: 'room',unread: 46,new: true},{avatar: './images/images-1.png',name: 'JobChat',type: 'room',unread: 12,new: false},{avatar: './images/images-3.png',name: 'MedHome',type: 'room',unread: 6,new: false},{avatar: './images/dms-icon-group.png',name: 'Chém gió',type: 'room',unread: 2,new: false, active: true},{avatar: './images/t-i-xu-ng.png',name: 'Lê Hồng Minh',type: 'person',unread: false,new: false},{avatar: './images/t-i-xu-ng-1.png',name: 'Nguyễn Xuân Anh',type: 'person',unread: false,new: false},{avatar: './images/marketing-solutions.png',name: 'Idea',type: 'room',unread: false,new: false},{avatar: './images/asiakaspalvelu.png',name: 'World Cup Kèo',type: 'room',unread: false,new: false},{avatar: './images/images-4.png',name: 'Lê Bảo Châu',type: 'person',unread: false,new: false},{avatar: './images/t-i-xu-ng-2.png',name: 'Phạm Nhật Vượng',type: 'person',unread: false,new: false},{avatar: './images/t-i-xu-ng-3.png',name: 'Trịnh Xuân Thanh',type: 'person',unread: false,new: false},{avatar: './images/t-i-xu-ng-4.png',name: 'Trịnh Văn Quyết',type: 'person',unread: false,new: false},{avatar: './images/t-i-xu-ng.png',name: 'Thân Đức Nam',type: 'person',unread: false,new: false},{avatar: './images/t-i-xu-ng-1.png',name: 'Nguyễn Cao Kỳ Duyên',type: 'person',unread: false,new: false},{avatar: './images/images-4.png',name: 'Trính Bá',type: 'person',unread: false,new: false},{avatar: './images/t-i-xu-ng-2.png',name: 'Cao Ngọc Phương Dung',type: 'person',unread: false,new: false},{avatar: './images/t-i-xu-ng-3.png',name: 'Nguyễn Thị Hồng Ngân',type: 'person',unread: false,new: false}]
+doctype html
+html(lang='en')
+    include ./partials/head.jade
+    body(class="fluid-page")
+        #page
+            include ./partials/header.jade
+            main.site-main
+                .container-fluid
+                    .row
+                        include ./partials/sidebar.jade
+                        include ./partials/content.jade
+                        include ./partials/flyout.jade
+            include ./partials/footer.jade
+        include ./partials/chat-add-note.jade

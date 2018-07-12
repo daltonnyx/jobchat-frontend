@@ -18,3 +18,25 @@
         }
     }
 }
+
+section.notifications {
+    .notification {
+        display: flex;
+        padding: 10px 0px;
+        & + .notification {
+            border-top: 1px solid #ddd;
+        }
+        align-items: center;
+        .icon {
+            margin-right: 20px;
+        }
+        .notification-text {
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+        .date {
+            font-style: italic;
+            color: #999;
+        }
+    }
+}

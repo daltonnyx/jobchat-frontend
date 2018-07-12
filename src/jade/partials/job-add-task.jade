@@ -1,0 +1,62 @@
+.fly-out.has-close-button
+    header.popup-header
+        h3.popup-title Add Task
+        a.close-popup(href="#")
+            img(src="./images/grupo-2.png", alt="X")
+    .popup-content
+        form.detail-task-form(action="/")
+            section.new-task
+                .form-line
+                    input.form-control(type="text", name="title", placeholder="Title Task ...")
+                .form-line.justify-content-between
+                    textarea.form-control(name="task_description",placeholder="Content Task ...")
+                    
+            section.details
+                .file-uploads
+                    .upload-button.drag-n-drop
+                        label
+                            input#file-upload(type="file", name="",style={display: "none"})
+                            span.btn.border-dashed
+                                img(src="./images/forma-16.png", alt="Add file")
+                                |Kích Hoặc thả file vào đây
+                    .file-lists
+                        ul.files
+                            
+                .accordition-ui
+                    .partition.assignees
+                        header.partition-header
+                            h6 Assignees
+                        .partition-content
+                            ul.ids
+                                li.add-id
+                                    a.link-add(href="#")
+                                        img(src="./images/forma-5.png", alt="", width="20")
+                    .partition.follow
+                        header.partition-header
+                            h6 Follow
+                        .partition-content
+                            ul.ids
+                                li.add-id
+                                    a.link-add(href="#")
+                                        img(src="./images/forma-5.png", alt="", width="20")
+                    .partition.deadline
+                        header.partition-header
+                            h6 Deadline
+                        .partition-content
+                            a.link-add(href="#")
+                                img(src="./images/forma-5.png", alt="", width="20")
+                    .partition.tags
+                        header.partition-header
+                            h6 Add Labels
+                        .partition-content
+                            .tags
+                                a.add-tag
+                                    img(src="./images/forma-5.png", alt="", width="20")
+                    .partition.task-group
+                        header.partition-header
+                            h6 Task Group
+                        .partition-content
+                            a.link-add(href="#")
+                                img(src="./images/forma-5.png", alt="", width="20")
+            button.btn.btn-primary(type="submit") Add Task
+                    

@@ -1,0 +1,33 @@
+- var user_list=[{name:"Lê Bảo Châu",image:"./images/images-4@2x.png",checked:!0,admin:!1},{name:"Phạm Nhật Vượng",image:"./images/t-i-xu-ng-2@2x.png",checked:!1,admin:!1},{name:"Trịnh Xuân Thanh",image:"./images/t-i-xu-ng-3@2x.png",checked:!0,admin:!0},{name:"Trịnh Văn Quyết",image:"./images/t-i-xu-ng-4@2x.png",checked:!0,admin:!1},{name:"Cao Ngọc Phương Dung",image:"./images/t-i-xu-ng-2@2x.png",checked:!1,admin:!1},{name:"Nguyễn Thị Hồng Ngân",image:"./images/t-i-xu-ng-3@2x.png",checked:!1,admin:!1},{name:"Cao Xuân Dũng",image:"./images/t-i-xu-ng-4@2x.png",checked:!1,admin:!1}]
+.fly-out.has-close-button
+    .friend-box
+        header.popup-header
+            ul.nav.nav-tabs
+                li.nav-tab
+                    a.nav-link(href="#") Kết bạn
+                li.nav-tab.active
+                    a.nav-link(href="#") Danh bạ
+            a.close-popup(href="#")
+                img(src="./images/grupo-2.png", alt="X")
+        .popup-content
+            section.users
+                .users
+                    .search-user
+                        form#search-user(action="/")
+                            .form-line
+                                input.form-control.search-box(type="text", name="_search_user", placeholder="Tìm kiếm user")
+                    .user-table-list
+                        .table.users-table
+                            each user, idx in user_list
+                                .user
+                                    .name
+                                        .user-card.small
+                                            span.avatar
+                                                img(src=user.image, alt=user.name)
+                                            span.name= user.name
+                                    .action
+                                        a.danger(href="#") Hủy bạn
+
+                                
+            
+                

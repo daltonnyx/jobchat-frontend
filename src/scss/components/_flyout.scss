@@ -1,0 +1,102 @@
+.fly-out {
+    position: fixed;
+    right: 0;
+    top: 88px;
+    width: 341px;
+    height: calc(100vh - 88px);
+    border: 1px solid #e1e4e8; 
+    background: #fff;
+    .popup-header {
+        padding: 0px 15px;
+        background: $color__main-1;
+        position: relative;
+        h3 {
+            font-weight: normal;
+            font-size: 14px;
+            padding-top: 10px;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            &.has-icon {
+                padding-left: 25px;
+                background: url(../../dist/images/shape-3.png) no-repeat left center;
+            }
+        }
+    }
+    .close-popup {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+    .popup-content {
+        padding: 0px 15px;
+        font-size: 12px;
+        overflow-y: auto;
+        height: calc(100% - 71px);
+        .row {
+            margin-bottom: 10px;
+        }
+    }
+    section + section {
+        border-top: 1px solid #e1e4e8;
+        padding-top: 17px;
+        padding-bottom: 16px;
+    }
+    .section-title {
+        font-weight: normal;
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 1;
+    }
+    .form-line {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        input {
+            width: 100%;
+            color: #999;
+            padding: 10px 22px 7px;
+            line-height: 1;
+            outline: none;
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            
+        }
+    }
+    .btn {
+        width: 100%;
+        background: none;
+        border: none;
+        text-align: center;
+        padding: 12px 0px;
+        line-height: 1;
+        border-radius: 2px;
+        font-size: 14px;
+        &.small {
+            padding: 4px 0px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+    .btn-secondary {
+        background: #eee;
+        border: 1px solid #ccc;
+        color: #000;
+    }
+    .btn-primary {
+        background: #3490e9;
+        color: #fff;
+    }
+    .bg-primary {
+        background: #d9f2ff;
+    }
+    textarea {
+        width: 100%;
+    }
+    .form-line .form-control {
+        border: 1px solid #ccc;
+        padding: 11px 15px;
+        line-height: 1;
+        font-size: 14px;
+    }
+}
+

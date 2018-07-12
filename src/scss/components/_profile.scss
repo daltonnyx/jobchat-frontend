@@ -1,0 +1,38 @@
+.account-profile {
+    position: fixed;
+    top: 41px;
+    right: 2px;
+    min-width: 260px;
+    background: #fff;
+    box-shadow: 0 0 9.5px 0.5px #cccccc;
+    header {
+        padding: 12px 0px;;
+        background: #eeeeee;
+        h3 {
+            text-align: center;
+            color: #333;
+            font-size: 14px;
+            line-height: 1;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+    }
+    .profile-link {
+        padding: 5px 0px;
+        ul.links {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                padding: 10px 15px;
+                a {
+                    color: #000;
+                    font-size: 12px;
+                }
+            }
+            .border-top {
+                border-top: 1px solid #dddddd;
+            }
+        }
+    }
+}

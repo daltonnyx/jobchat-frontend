@@ -1,0 +1,61 @@
+- var list_task=[{title:"Prepare Tab",joined:12,tasks:[{title:"Tạo danh sách các nhóm thuốc",created_by:"Phạm nhật vượng",status:"red",tags:[{class:"success",caption:"Phase 1"},{class:"warning",caption:"Important"},{class:"danger",caption:"Mid"}]},{title:"Bảng phân loại theo biệt dược",created_by:"Lê Hoàng Diệp Thảo",status:"green",follows:["./images/images-4.png"],tos:["./images/t-i-xu-ng.png","./images/t-i-xu-ng-1.png"],tags:[{class:"success",caption:"Phase 1"},{class:"danger",caption:"Mid"}]},{title:"Phân chia tỷ lệ cơ cấu, cấu trúc danh mục thuốc kê đơn và thuốc không kê đ...",created_by:"Lê Hoàng Diệp Thảo",status:"green",tos:["./images/images-4.png"],tags:[{class:"success",caption:"Phase 1"},{class:"primary",caption:"20% value"}]},{title:"Phân loại thuốc",forward:"Bảng phân loại theo biệt dược",created_by:"Lê Hoàng Diệp Thảo",status:"green",tos:["./images/images-4.png"],tags:[{class:"success",caption:"Phase 1"},{class:"primary",caption:"20% value"}]},{title:"Bảng phân loại theo biệt dược",created_by:"Lê Hoàng Diệp Thảo",status:"green",follows:["./images/images-4.png"],tos:["./images/t-i-xu-ng.png","./images/t-i-xu-ng-1.png"],tags:[{class:"success",caption:"Phase 1"},{class:"danger",caption:"Mid"}]},{title:"Phân chia tỷ lệ cơ cấu, cấu trúc danh mục thuốc kê đơn và thuốc không kê đ...",created_by:"Lê Hoàng Diệp Thảo",status:"green",tos:["./images/images-4.png"],tags:[{class:"success",caption:"Phase 1"},{class:"primary",caption:"20% value"}]}]},{title:"Processing Tab",joined:12,tasks:[{title:"Phân loại thuốc",forward:"Bảng phân loại theo biệt dược",created_by:"Lê Hoàng Diệp Thảo",status:"green",tos:["./images/images-4.png"],tags:[{class:"success",caption:"Phase 1"},{class:"primary",caption:"20% value"}]},{title:"Tạo danh sách các nhóm thuốc",created_by:"Phạm nhật vượng",status:"red",tags:[{class:"success",caption:"Phase 1"},{class:"warning",caption:"Important"},{class:"danger",caption:"Mid"}]},{title:"Bảng phân loại theo biệt dược",created_by:"Lê Hoàng Diệp Thảo",status:"green",follows:["./images/images-4.png"],tos:["./images/t-i-xu-ng.png","./images/t-i-xu-ng-1.png"],tags:[{class:"success",caption:"Phase 1"},{class:"danger",caption:"Mid"}]},{title:"Phân chia tỷ lệ cơ cấu, cấu trúc danh mục thuốc kê đơn",created_by:"Lê Hoàng Diệp Thảo",status:"green",tos:["./images/images-4.png"],tags:[{class:"success",caption:"Phase 1"},{class:"primary",caption:"20% value"}]}]},{title:"Finished Tab",joined:12,tasks:[{title:"Tạo danh sách các nhóm thuốc",created_by:"Phạm nhật vượng",status:"red",tags:[{class:"success",caption:"Phase 1"},{class:"warning",caption:"Important"},{class:"danger",caption:"Mid"}]},{title:"Bảng phân loại theo biệt dược",created_by:"Lê Hoàng Diệp Thảo",status:"green",follows:["./images/images-4.png"],tos:["./images/t-i-xu-ng.png","./images/t-i-xu-ng-1.png"],tags:[{class:"success",caption:"Phase 1"},{class:"danger",caption:"Mid"}]},{title:"Phân chia tỷ lệ cơ cấu, cấu trúc danh mục thuốc kê đơn và thuốc không kê đ...",created_by:"Lê Hoàng Diệp Thảo",status:"green",tos:["./images/images-4.png"],tags:[{class:"success",caption:"Phase 1"},{class:"primary",caption:"20% value"}]},{title:"Phân loại thuốc",forward:"Bảng phân loại theo biệt dược",created_by:"Lê Hoàng Diệp Thảo",status:"green",tos:["./images/images-4.png"],tags:[{class:"success",caption:"Phase 1"},{class:"primary",caption:"20% value"}]},{title:"Bảng phân loại theo biệt dược",created_by:"Lê Hoàng Diệp Thảo",status:"green",follows:["./images/images-4.png"],tos:["./images/t-i-xu-ng.png","./images/t-i-xu-ng-1.png"],tags:[{class:"success",caption:"Phase 1"},{class:"danger",caption:"Mid"}]},{title:"Tạo danh sách các nhóm thuốc",created_by:"Phạm nhật vượng",status:"red",tags:[{class:"success",caption:"Phase 1"},{class:"warning",caption:"Important"},{class:"danger",caption:"Mid"}]}]}]
+
+
+mixin render_task(task)
+    .task.card
+        .icon.task-icon
+            if task.status == "red"
+                img(src="./images/forma-12.png", alt= task.status)
+            else if task.status == "green"
+                img(src="./images/forma-13.png", alt= task.status)
+        a.edit.edit-task(href="#")
+            img(src="./images/forma-11.png", alt="Edit task")
+        a.task(href="#")
+            h4.task-name= task.title
+        if task.forward
+            a.forward(href="#")
+                h4.forward-name= task.forward
+        p.created-by
+            span.caption Tạo bởi 
+            span= task.created_by
+        .tags
+            each tag in task.tags
+                span(class=tag.class)= tag.caption
+        .followers
+            if task.tos
+                .task-to
+                    span.caption To:
+                    each image in task.tos
+                        span.avatar
+                            img(src=image, alt="")
+            if task.follows
+                .task-follow
+                    span.caption Follow:
+                    each image in task.follows
+                        span.avatar
+                            img(src=image, alt="")
+
+
+
+mixin render_column(col)
+    .kanban-col
+        header.kanban-header
+            a(href="#").joined= col.joined
+            h3.column-title= col.title
+            a(href="#").add-col
+                img(src="./images/forma-5.png", alt="Add col", width="15")
+            a(href="#").edit-col
+                img(src="./images/forma-11.png", alt="Edit col", width="15")
+        .tasks
+            each task in col.tasks
+                +render_task(task)
+            .new-task
+                a.add-task(href="#")
+                    img(src="./images/forma-14.png", alt="Add card")
+
+
+.kanban-task
+    each col in list_task
+        +render_column(col)
+    .new-column
+        a.add-column(href="#") Add

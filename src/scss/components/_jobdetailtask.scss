@@ -1,0 +1,193 @@
+.detail-task-form {
+    padding: 0px 10px;
+    .task-info {
+        padding: 0px 10px;
+    }
+    .new-task {
+        textarea {
+            height: 150px;
+        }
+    }
+    .description {
+        max-height: 133px;
+        overflow-y: auto;
+        font-size: 14px;
+        color: #333;    
+        margin-bottom: 5px;
+    }
+    .form-line {
+        position: relative;
+    }
+    .edit-inline {
+        position: absolute;
+        bottom: 5px;
+        right: -15px;
+    }
+    h5.title {
+        font-size: 14px;
+        font-weight: normal;
+        color: #0058b6;
+        margin-bottom: 0;
+    }
+    label {
+        width: 100%;
+        font-size: 14px;
+    }
+    .upload-button .btn {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0px 7px;
+        border: 2px solid #ccc;
+        color: #999;
+        font-style: italic;
+        img {
+            margin-right: 11px;
+        }
+    }
+    .file-lists {
+        margin-bottom: 13px;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .file-name {
+            font-size: 12px;
+            color: #549514;          
+            font-style: italic;
+        } 
+    }
+}
+
+.accordition-ui {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin-bottom: 10px;
+    .partition {
+        border-bottom: solid 1px #dbdbdb;
+        header {
+            background: #f2f2f2;
+            border-bottom: solid 1px #dbdbdb;
+            padding: 0px 12px;
+            h6 {
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 2.2;
+            }
+        }
+        .partition-content {
+            padding: 7px 12px;
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+            }
+            p {
+                margin-bottom: 0;
+                font-size: 14px;
+            }
+            color: #333;
+        }
+        .avatar {
+            margin-right: 6.5px;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        a {
+            color: $color__text-1;
+        }
+    }
+}
+
+.comments {
+    position: relative;
+    h5.title {
+        color: #333;
+        line-height: 2;
+    }
+    header {
+        padding-left: 35px;
+        margin-bottom: 5px;
+        background: url(../../dist/images/forma-7.png) no-repeat left center;
+
+    }
+    .float-btn {
+        border: none;
+        position: absolute;
+        top: 0;
+        width: auto;
+        right: 0;
+        padding: 0;
+        img {
+            width: 27px;
+            margin-right: 0;
+            height: 27px;
+        }
+    }
+    #comment-input {
+        width: 100%;
+        padding: 11px;
+        color: #46454c;
+        border: solid 1px #ccc;
+    }
+    .comment-list {
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .comment {
+            display: flex;
+            .left-col {
+                .avatar {
+                    img {
+                        width: 42px;
+                    }
+                }
+            }
+            .right-col {
+                padding-left: 7px;
+                font-size: 14px;
+                flex-grow: 1;
+                position: relative;
+            }
+            h4 {
+                margin-bottom: 2px;
+                line-height: 1;
+                color: #333;
+            }
+            p {
+                margin-bottom: 3px;
+            }
+            .time {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-style: italic;
+                color: #333;
+                line-height: 1;
+            }
+            .receipts {
+                display: flex;
+                .green {
+                    color: #52cc1c;
+                }
+                .receipts-list {
+                    margin-left: 11px;
+                    .name {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

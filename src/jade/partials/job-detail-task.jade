@@ -1,0 +1,119 @@
+.fly-out.has-close-button
+    header.popup-header
+        h3.popup-title Task162534
+        a.close-popup(href="#")
+            img(src="./images/grupo-2.png", alt="X")
+    .popup-content
+        form.detail-task-form(action="/")
+            section.task-info
+                .form-line
+                    input(type="hidden", name="title", value="Tạo danh sách các nhóm thuốc không k...")
+                    h5.title Tạo danh sách các nhóm thuốc không k...
+                    a.edit-inline(href="#")
+                        img(src="./images/forma-10.png", alt="edit inline")
+                .form-line.justify-content-between
+                    .description
+                        |- Lấy dữ liệu từ danh mục khác: Hỗ trợ CSKCB lấy trực tiếp danh mục trên cổng tiếp nhận. 
+                        br
+                        |- Nếu là trạm y tế thì có thể chọn danh mục từ danh mục của CSKCB cấp cha hoặc từ các trạm y tế có cùng 1 CSKCB cấp cha. 
+                        br
+                        |- Nếu là CSKCB cấp huyện, cấp tỉnh, thì có thể chọn danh mục từ danh mục thuốc trúng thầu của tỉnh.
+                        br
+                        |- Nhập dữ liệu từ excel: CSKCB lập danh mục thuốc trên file excel, sau đó tiến hành tải dữ liệu excel đó lên cổng.
+                        br
+                        |- Thêm mới: Chức năng này hỗ trợ CSKCB trực tiếp nhập thuốc trên cổng tiếp nhận.
+                    a.edit-inline(href="#")
+                        img(src="./images/forma-10.png", alt="edit inline")
+            section.details
+                .file-uploads
+                    .upload-button.drag-n-drop
+                        label
+                            input#file-upload(type="file", name="",style={display: "none"})
+                            span.btn.border-dashed
+                                img(src="./images/forma-16.png", alt="Add file")
+                                |Kích Hoặc thả file vào đây
+                    .file-lists
+                        ul.files
+                            li.file
+                                span.file-name Dược thư quốc gia 2018.pdf
+                                span.file-cancel
+                                    img(src="./images/grupo-3.png", alt="Remove")
+                .accordition-ui
+                    .partition.assignees
+                        header.partition-header
+                            h6 Assignees
+                        .partition-content
+                            ul.ids
+                                li.id
+                                    a.link(href="#")
+                                        span.avatar
+                                            img(src="./images/t-i-xu-ng-2.png", alt="Phạm nhật vượng")
+                                li.id
+                                    a.link(href="#")
+                                        span.avatar
+                                            img(src="./images/t-i-xu-ng-3.png", alt="Trịnh xuân thanh")
+                                li.id
+                                    a.link(href="#")
+                                        span.avatar
+                                            img(src="./images/t-i-xu-ng-4.png", alt="Trịnh văn quyết")
+                                li.add-id
+                                    a.link-add(href="#")
+                                        img(src="./images/forma-5.png", alt="", width="20")
+                    .partition.follow
+                        header.partition-header
+                            h6 Follow
+                        .partition-content
+                            ul.ids
+                                li.id
+                                    a.link(href="#")
+                                        span.avatar
+                                            img(src="./images/t-i-xu-ng-2.png", alt="Phạm nhật vượng")
+                                li.add-id
+                                    a.link-add(href="#")
+                                        img(src="./images/forma-5.png", alt="", width="20")
+                    .partition.deadline
+                        header.partition-header
+                            h6 Deadline
+                        .partition-content
+                            p.deadline Ngày 21/06/2018
+                    .partition.tags
+                        header.partition-header
+                            h6 Add Labels
+                        .partition-content
+                            .tags
+                                span.danger Important
+                                span.success Pharse 1
+                                span.warning 20% Value
+                                a.add-tag
+                                    img(src="./images/forma-5.png", alt="", width="20")
+                    .partition.task-group
+                        header.partition-header
+                            h6 Task Group
+                        .partition-content
+                            a.group.link(href="#")
+                              |Task12425: Phân loại thuốc theo biệt dược
+                .comments.task-comments
+                    header.comment-header
+                        h5.title Gửi đến
+                    .comment-form
+                        textarea#comment-input.form-control(name="comment", style={resize:"none"}, placeholder="Thêm bình luận")
+                        a.btn.float-btn(href="#")
+                            img(src="./images/forma-9.png", alt="Send")
+                    .comment-list
+                        ul.comments
+                            li.comment
+                                .left-col
+                                    span.avatar
+                                        img(src="./images/t-i-xu-ng-3@2x.png", alt="Avatar")
+                                .right-col
+                                    h4.sender Lê Hoàng Diệp Thảo
+                                    p.comment-content Người lạ ơi mình bắt đầu lấy dữ liệu
+                                    span.time 2 ngày trước
+                                    .receipts
+                                        span.green To
+                                        ul.receipts-list
+                                            li
+                                                span.avatar
+                                                    img(src="./images/t-i-xu-ng-4.png", alt="")
+                                                span.name Nguyễn Thị Như Hoa
+                    

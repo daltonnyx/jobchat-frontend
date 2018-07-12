@@ -1,0 +1,85 @@
+.fly-out.has-close-button
+    header.popup-header
+        h3.popup-title Edit Project
+        a.close-popup(href="#")
+            img(src="./images/grupo-2.png", alt="X")
+    .popup-content
+        form.edit-form(action="/")
+            section.summary-info
+                .form-line
+                    input(type="hidden", name="title", value="MedHome")
+                    span.title MedHome
+                    a.edit-title(href="#")
+                        img(src="./images/forma-10.png", alt="edit title")
+                .form-line.justify-content-between
+                    .span.caption Avatar
+                    .a.file-upload.avatar-file
+                        img(src="./images/shape-5.png", alt="upload")
+                        span Upload
+            section.labels
+                h4.section-title Add labels
+                table.input-table.table
+                    thead
+                        tr
+                            th Name Label
+                            th Color
+                            th
+                    tbody
+                        tr
+                            td
+                                input.form-control(type="text", value="Mid")
+                            td
+                                input(type="hidden", name="label_color")
+                                span.label.color-label(style={background: "#ff9e9e"}) #ff9e9e
+                            td
+                                a.remove-label(href="#")
+                                    img(src="./images/grupo-3.png", alt="remove-label")
+                        tr
+                            td
+                                input.form-control(type="text",value="Phase 1")
+                            td
+                                input(type="hidden", name="label_color")
+                                span.label.color-label(style={background: "#b2e46a"}) #b2e46a
+                            td
+                                a.remove-label(href="#")
+                                    img(src="./images/grupo-3.png", alt="remove-label")
+                        tr
+                            td
+                                input.form-control(type="text",value="Important")
+                            td
+                                input(type="hidden", name="label_color")
+                                span.label.color-label(style={background: "#fff568"}) #fff568
+                            td
+                                a.remove-label(href="#")
+                                    img(src="./images/grupo-3.png", alt="remove-label")
+                        tr
+                            td(colspan="3")
+                                a.add-label(href="#")
+                                    span.icon
+                                        img(src="./images/forma-5.png", alt="Add")
+                                    span Add more
+            section.assignees
+                .list-horizonal
+                    h4.list-title Assignees
+                    a.float-button.edit-assignees(href="#")
+                        img(src="./images/forma-10.png", alt="Edit")
+                    ul.list-editor.assignees
+                        li.list-item
+                            a.editor-link.assignees(href="#")
+                                span.avatar
+                                    img(src="./images/images-4.png", alt="Lê Bảo Châu")
+                        li.list-item
+                            a.editor-link.assignees(href="#")
+                                span.avatar
+                                    img(src="./images/t-i-xu-ng-2.png", alt="Phạm Nhật Vương")
+                        li.list-item
+                            a.editor-link.assignees(href="#")
+                                span.avatar
+                                    img(src="./images/t-i-xu-ng-4.png", alt="Trịnh Văn Quyết")
+                .list-horizonal
+                    h4.list-title Admin
+                    ul.list-editor.admin
+                        li.list-item
+                            a.editor-link.admin(href="#")
+                                span.avatar
+                                    img(src="./images/t-i-xu-ng-3.png", alt="Trịnh Xuân Thanh")

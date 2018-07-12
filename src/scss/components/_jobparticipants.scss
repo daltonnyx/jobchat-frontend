@@ -1,0 +1,31 @@
+.task-users {
+    margin-bottom: 14px;
+    .participants {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+        }
+        li {
+            margin-left: 7.5px;
+        }
+        .id {
+            img {
+                width: 24.7px;
+                height: 24.7px;
+            }
+        }
+        .more {
+            .avatar {
+                width: 24.7px;
+                height: 24.7px;
+                background: $color__icon-1;
+                line-height: 2;
+                color: #fff;
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+    }
+}

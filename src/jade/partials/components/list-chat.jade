@@ -9,15 +9,16 @@
                 img(src="./images/layer-3.png", alt="My chat")
             h3 My chat
         .scrollable
-            each account in list_chat 
-                .account(class= account.active ? "active" : "")
-                    a(href="#")
-                        span.avatar
-                            img( src = account.avatar, alt = account.name )
-                        span.name= account.name
-                        if account.type == 'room'
-                            span.room Room
-                        if account.unread
-                            span.unread= account.unread
-                                if account.new
-                                    span.new
+            if list_chat
+                each account in list_chat 
+                    .account(class= account.active ? "active" : "")
+                        a(href="#")
+                            span.avatar
+                                img( src = account.avatar, alt = account.name )
+                            span.name= account.name
+                            if account.type == 'room'
+                                span.room Room
+                            if account.unread
+                                span.unread= account.unread
+                                    if account.new
+                                        span.new

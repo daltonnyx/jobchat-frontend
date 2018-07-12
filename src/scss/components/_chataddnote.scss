@@ -1,0 +1,132 @@
+.notes-popup {
+    margin-left: -7px;
+    margin-right: -7px;
+    .card {
+        background: #fff;
+        border: 1px solid #e1e4e8;
+        border-radius: 5px;
+        position: relative;
+        padding: 9px 33px 0px;
+        margin: 0 0px 16px;
+        .icon {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            line-height: 1;
+        }
+        .remove-task {
+            position: absolute;
+            right: 10px;
+            top: 9px;
+            width: 16px;
+            height: 15px;
+            font-size: 0;
+        }
+        h4 {
+            font-weight: normal;
+            color: $color__text-1;
+            line-height: 1;
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+        .created-by {
+            margin-bottom: 9px;
+            padding: 0px 2.5px;
+            line-height: 1;
+            .caption {
+                color: $color__bg-3;
+                
+            }
+        }
+        .task-footer {
+            margin-left: -33px;
+            margin-right: -33px;
+            border-top: 1px solid #ccc;
+            margin-top: 10px;
+            padding: 6px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .assignees {
+            display: inline-flex;
+            align-items: center;
+        }
+        .avatar {
+            margin-left: 6px;
+            img {
+                width: 22px;
+                height: 22px;
+            }
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+        .btn.get-task {
+            min-width: 75px;
+            display: inline-block;
+        }
+    }
+        
+    .chat-notes {
+        .add-note {
+            border: 5px solid #cccccc;
+            margin-bottom: 15px;
+            a {
+                font-size: 14px;
+                color: #000;
+                padding: 5px 12px;
+                display: inline-block;
+            }
+        }
+        #new-note {
+            border: none;
+            resize: none;
+            padding: 6px 13px;
+        }
+        .note-date {
+            background: #eee;
+            padding: 4px 14px;
+            a {
+                margin-left: 15px;
+            }
+        }
+        .note-actions {
+            display: flex;
+            padding: 6px 19px;
+            .btn {
+                font-size: 14px;
+                font-weight: normal;
+            }
+            .btn + .btn {
+                margin-left: 8px;
+            }
+        }
+    } 
+    .notes-list {
+        .note-card {
+            font-size: 14px;
+            margin-bottom: 10px;
+            border: solid 1px #e1e4e8;
+            border-radius: 4px;
+            .note {
+                padding: 12px 17px;
+            }
+            .note-footer {
+                justify-content: space-between;
+                padding-left: 17px;
+                padding-right: 17px;
+                display: flex;
+                border-top: solid 1px #cecece;
+            }
+            .note-action {
+                a {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }  
+}

@@ -1,0 +1,46 @@
+.fly-out.has-close-button
+    header.popup-header
+        h3.popup-title Add Column
+        a.close-popup(href="#")
+            img(src="./images/grupo-2.png", alt="X")
+    .popup-content
+        form.edit-column-form(action="/")
+            section.column-info
+                .form-line
+                    input.form-control(type="text", name="title", value="Name Column ...")
+                    
+                .column-option
+                    .option-assignees.options
+                        .option
+                            label(for="option-assignees") 
+                                input#option-assignees.option(type="checkbox", name="assignees")
+                                .checkbox
+                                span.caption Assignees
+                        ul.option-list
+                            li.add-list
+                                img(src="./images/forma-5.png", alt="Add list")
+                    .option-invite.options
+                        .option
+                            label(for="option-invite")
+                                input#option-invite.option(type="checkbox", name="auto_invite")
+                                .checkbox
+                                span.caption Auto invite
+                        ul.option-list
+                            li.add-list
+                                img(src="./images/forma-5.png", alt="Add list")
+                    .option-follow.options
+                        .option
+                            label(for="option-follow")
+                                input#option-follow.option(type="checkbox", name="follow")
+                                .checkbox
+                                span.caption Follow
+                        ul.option-list
+                            li.add-list
+                                img(src="./images/forma-5.png", alt="Add list")
+                    .option-finished.options
+                        .option
+                            label(for="option-finished")
+                                input#option-finished.option(type="checkbox", name="finished")
+                                .checkbox
+                                span.caption Finished column
+                button.btn.btn-primary(type="submit") Create column

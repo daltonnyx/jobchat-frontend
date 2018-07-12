@@ -1,0 +1,56 @@
+.fly-out.has-close-button
+    header.popup-header
+        h3.popup-title Edit Column
+        a.close-popup(href="#")
+            img(src="./images/grupo-2.png", alt="X")
+    .popup-content
+        form.edit-column-form(action="/")
+            section.column-info
+                .form-line
+                    input(type="hidden", name="title", value="Prepare")
+                    span.title Prepare
+                    a.edit-title(href="#")
+                        img(src="./images/forma-10.png", alt="edit title")
+                .column-option
+                    .option-assignees.options
+                        .option
+                            label(for="option-assignees") 
+                                input#option-assignees.option(type="checkbox", name="assignees")
+                                .checkbox
+                                span.caption Assignees
+                        ul.option-list
+                            li.add-list
+                                img(src="./images/forma-5.png", alt="Add list")
+                    .option-invite.options
+                        .option
+                            label(for="option-invite")
+                                input#option-invite.option(type="checkbox", name="auto_invite", checked="checked")
+                                .checkbox
+                                span.caption Auto invite
+                        ul.option-list
+                            li
+                                span.avatar
+                                    img(src="./images/t-i-xu-ng-2.png", alt="Phạm Nhật Vượng")
+                            li
+                                span.avatar
+                                    img(src="./images/t-i-xu-ng-3.png", alt="Trịnh Xuân Thanh")
+                            li
+                                span.avatar
+                                    img(src="./images/t-i-xu-ng-4.png", alt="Trịnh Văn Quyết")
+                            li.add-list
+                                img(src="./images/forma-5.png", alt="Add list")
+                    .option-follow.options
+                        .option
+                            label(for="option-follow")
+                                input#option-follow.option(type="checkbox", name="follow")
+                                .checkbox
+                                span.caption Follow
+                        ul.option-list
+                            li.add-list
+                                img(src="./images/forma-5.png", alt="Add list")
+                    .option-finished.options
+                        .option
+                            label(for="option-finished")
+                                input#option-finished.option(type="checkbox", name="finished")
+                                .checkbox
+                                span.caption Finished column

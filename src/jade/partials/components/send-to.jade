@@ -1,0 +1,27 @@
+- var groups=[{icon:"./images/shape-7.png",title:"Cá nhân"},{icon:"./images/images-2.png",title:"Lobe Beauty",active:!0},{icon:"./images/images-1.png",title:"JobChat"},{icon:"./images/images-3.png",title:"MedHome"},{icon:"./images/dms-icon-group.png",title:"Chém gió"},{icon:"./images/marketing-solutions.png",title:"Idea"},{icon:"./images/asiakaspalvelu.png",title:"World Cup Kèo"}]
+- var users=[{icon:"./images/ellipse-1.png",title:"Tất cả"},{icon:"./images/t-i-xu-ng.png",title:"Hà Văn Thắm"},{icon:"./images/t-i-xu-ng-1.png",title:"Trịnh Văn Quyết"},{icon:"./images/images-4.png",title:"Lê Hoàng Diệp Thảo"},{icon:"./images/t-i-xu-ng-2.png",title:"Đặng Lê Nguyên Vũ"},{icon:"./images/t-i-xu-ng-3.png",title:"Nguyễn Thị Phương ..."},{icon:"./images/t-i-xu-ng-4.png",title:"Nguyễn Việt Quang"},{icon:"./images/images-4.png",title:"Lê Thanh Thản"},{icon:"./images/t-i-xu-ng.png",title:"Phạm Nhật Vượng"}]
+.send-to.fixed-box
+    .box-content
+        .send-to-group
+            header.box-header
+                h3.box-title GỬI ĐẾN
+            .group-container
+                ul.group-list
+                    each group in groups
+                        li(class= group.active ? "group active" : "group")
+                            a(href="#")
+                                span.avatar
+                                    img(src=group.icon, alt=group.title)
+                                span.group-title= group.title
+        .users-box
+            .search-user
+                form#user_search(action="/")
+                    input.search_user(type="text",placeholder="Tìm kiếm tên", style={'background-image': 'url(./images/forma-1.png)'})
+            .users-container
+                ul.user-list
+                    each user in users
+                        li.user
+                            a(href="#")
+                                span.avatar
+                                    img(src=user.icon, alt=user.title)
+                                span.user-title= user.title

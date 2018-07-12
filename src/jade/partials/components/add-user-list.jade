@@ -1,0 +1,36 @@
+- var user_list=[{name:"Lê Bảo Châu",image:"./images/images-4@2x.png",checked:!0,admin:!1},{name:"Phạm Nhật Vượng",image:"./images/t-i-xu-ng-2@2x.png",checked:!1,admin:!1},{name:"Trịnh Xuân Thanh",image:"./images/t-i-xu-ng-3@2x.png",checked:!0,admin:!0},{name:"Trịnh Văn Quyết",image:"./images/t-i-xu-ng-4@2x.png",checked:!0,admin:!1},{name:"Cao Ngọc Phương Dung",image:"./images/t-i-xu-ng-2@2x.png",checked:!1,admin:!1},{name:"Nguyễn Thị Hồng Ngân",image:"./images/t-i-xu-ng-3@2x.png",checked:!1,admin:!1},{name:"Cao Xuân Dũng",image:"./images/t-i-xu-ng-4@2x.png",checked:!1,admin:!1}]
+
+.users
+    .search-user
+        form#search-user(action="/")
+            .form-line
+                input.form-control.search-box(type="text", name="_search_user", placeholder="Tìm kiếm user")
+    .user-table-list
+        table.table.users-table
+            thead
+                tr
+                    th
+                        label(for="checkall")
+                            input#checkall(type="checkbox", name="check_all")
+                            span.checkbox.style-2
+                    th Chọn tất cả
+                    th Admin
+            tbody
+                each user, idx in user_list
+                    tr
+                        td
+                            label(for="check-user-" + idx)
+                                input(id="check-user-" + idx,type="checkbox", name="select_user",value=idx, checked= user.checked ? "checked" : undefined)
+                                span.checkbox.style-2
+                        td
+                            .user-card.small
+                                span.avatar
+                                    img(src=user.image, alt=user.name)
+                                span.name= user.name
+                        td
+                            if user.checked
+                                label(for="user-admin-"+idx)
+                                    input(id="user-admin-"+idx,type="checkbox", name="select_admin", value=idx, checked= user.admin ? "checked": undefined)
+                                    span.checkbox
+
+                

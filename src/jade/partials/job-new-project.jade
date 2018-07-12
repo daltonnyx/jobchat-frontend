@@ -1,0 +1,67 @@
+.fly-out.has-close-button
+    header.popup-header
+        h3.popup-title New Project
+        a.close-popup(href="#")
+            img(src="./images/grupo-2.png", alt="X")
+    .popup-content
+        form.edit-form(action="/")
+            section.summary-info
+                .form-line
+                    input.form-control(type="text", name="project_title", placeholder="Project Name...")
+                .form-line.justify-content-between
+                    .span.caption Avatar
+                    .a.file-upload.avatar-file
+                        img(src="./images/shape-5.png", alt="upload")
+                        span Upload
+            section.labels
+                h4.section-title Add labels
+                table.input-table.table
+                    thead
+                        tr
+                            th Name Label
+                            th Color
+                            th
+                    tbody
+                        tr
+                            td
+                                input.form-control(type="text", value="Text here...")
+                            td
+                                input(type="hidden", name="label_color")
+                                span.label.color-label(style={background: "#ff9e9e"}) #ff9e9e
+                            td
+                                a.remove-label(href="#")
+                                    img(src="./images/grupo-3.png", alt="remove-label")
+                        tr
+                            td
+                                input.form-control(type="text",value="Text here...")
+                            td
+                                input(type="hidden", name="label_color")
+                                span.label.color-label(style={background: "#b2e46a"}) #b2e46a
+                            td
+                                a.remove-label(href="#")
+                                    img(src="./images/grupo-3.png", alt="remove-label")
+                        tr
+                            td
+                                input.form-control(type="text",value="Text here...")
+                            td
+                                input(type="hidden", name="label_color")
+                                span.label.color-label(style={background: "#fff568"}) #fff568
+                            td
+                                a.remove-label(href="#")
+                                    img(src="./images/grupo-3.png", alt="remove-label")
+                        tr
+                            td(colspan="3")
+                                a.add-label(href="#")
+                                    span.icon
+                                        img(src="./images/forma-5.png", alt="Add")
+                                    span Add more
+            section.assignees
+                .list-horizonal
+                    h4.list-title Assignees
+                    a.add-button.add-assignees(href="#")
+                        img(src="./images/forma-5.png", alt="Edit")
+                    ul.list-editor.assignees
+                    
+                .list-horizonal
+            button.btn.btn-primary(type="submit") Save
+                
